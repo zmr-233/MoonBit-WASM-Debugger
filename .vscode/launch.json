@@ -10,7 +10,7 @@
 			"type": "extensionHost",
 			"request": "launch",
 			"args": [
-				// "${workspaceFolder}/mbt_test",
+				"${workspaceFolder}/mbt_test2",
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
 			"outFiles": [

@@ -12,3 +12,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 - Transforms WASM stack traces into readable error messages with accurate file names and line numbers.
 - Integrates with VSCode's Problems panel for easy navigation to error locations.
 - Added command `Clean WASM Errors` to clear error messages manually.
+
+## [0.0.2] - 2024-10-19
+
+### Fixed
+
+- Solutions to Ensure `mappings.wasm` is Included

@@ -9,4 +9,14 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/.vscode-test.*
+**/*.ts
+!dist/**
+node_modules/**
+# Ignore everything in node_modules except mappings.wasm and vscode package
+node_modules/**
+!node_modules/vscode/**
+
+esbuild.js
+
 mbt_test/
+mbt_test2/

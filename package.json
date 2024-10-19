@@ -1,0 +1,56 @@
+{
+  "name": "mbtmap",
+  "displayName": "MoonBit WASM Debugger (Unofficial)",
+  "description": "Provides precise line-number error display for MoonBit's WASM errors; UNTRACEABLE UNWRAPS NO MORE! (Works with the official plugin)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zmr-233/MoonBit-WASM-Debugger.git"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "publisher": "zmr-233",
+  "license": "MIT",
+  "main": "./out/extension.js",
+  "icon": "images/extension-icon.png",
+  "activationEvents": [
+    "onStartupFinished",
+    "workspaceContains:moon.mod.json",
+    "onTaskType:shell"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "mbtmap.clearErrors",
+        "title": "Clean WASM Errors"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.11.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "source-map": "^0.7.4"
+  }
+}

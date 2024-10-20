@@ -9,7 +9,13 @@
 - Transforms cryptic WASM stack traces into readable error messages with accurate file names and line numbers.
 - Seamlessly integrates with VSCode's Problems panel for quick navigation to error locations.
 
-*(I'll insert two images here showing the error display before and after using the extension.)*
+Before:
+![image](https://github.com/user-attachments/assets/37eb4a6c-a991-4564-92d8-2761d1675b4b)
+
+Now:
+![image](https://github.com/user-attachments/assets/5ce63b9b-d861-4cb9-aee2-05c0e22b7353)
+![image](https://github.com/user-attachments/assets/fc32b347-8538-4f2f-9a8f-24e03e481b9c)
+
 
 ## Usage
 

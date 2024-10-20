@@ -17,4 +17,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ### Fixed
 
-- Solutions to Ensure `mappings.wasm` is Included
+- Solutions to Ensure `mappings.wasm` is Included.
+
+## [0.0.3] - 2024-10-20
+
+### Added
+
+- README.md add pictures.
